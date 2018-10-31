@@ -1,5 +1,8 @@
 # Table of contents
 
+* [Intro](intro.md)
+* [Use Cases](use-cases.md)
+
 ## Introduction
 
 * [What is BigConnect ?](introduction/what-is-bigconnect.md)
@@ -16,4 +19,3 @@
 
 * [Getting started](administration-guide/getting-started.md)
 
-* [Use Cases](use-cases.md)
