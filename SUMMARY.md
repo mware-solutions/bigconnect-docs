@@ -14,6 +14,10 @@
 
 ## Developer Guide
 
-* [Getting started](developer-guide/getting-started.md)
-* [Building the project](developer-guide/build-project.md)
+* [Things you should know](developer-guide/things-you-should-know.md)
+* [Getting started](developer-guide/getting-started/README.md)
+  * [Source code structure](developer-guide/getting-started/source-code.md)
+  * [Setup for development](developer-guide/getting-started/setup-for-development.md)
+  * [Contributing](developer-guide/getting-started/contributing.md)
+* [Plugin development](developer-guide/plugin-development.md)
 
