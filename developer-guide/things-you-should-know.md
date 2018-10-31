@@ -465,7 +465,27 @@ There are a lot of system properties, concepts and relations used internally by 
 
 The initial ontology is defined in the [DefaultOntologyCreator](https://github.com/mware-solutions/bigconnect/blob/master/bc-common/src/main/java/com/mware/core/model/ontology/DefaultOntologyCreator.java) class.
 
+## Configuration
 
+There are many strategies for locating BigConnect's configuration properties. By default, BigConnect will use [`com.mware.core.config.FileConfigurationLoader`](https://github.com/mware-solutions/bigconnect/blob/master/bc-common/src/main/java/com/mware/core/config/FileConfigurationLoader.java) to load configuration files and [`com.mware.core.bootstrap.lib.LibDirectoryLoader`](https://github.com/mware-solutions/bigconnect/blob/master/bc-common/src/main/java/com/mware/core/bootstrap/lib/LibDirectoryLoader.java) to load additional `.jar` files.
+
+The following directories will be searched in order:
+
+* /opt/bigconnect for Linux/OSX
+* c:/opt/bigconnect for Windows
+* ${appdata}/Bigconnect
+* ${user.home}/.bigconnect
+* a directory specified with the `BIGCONNECT_DIR` environment variable
+
+The FileConfigurationLoader will load alphabetically all files in `config` sub-directories with `.properties` extensions, allowing you to override properties in various places.
+
+All `.jar` files in `/lib` sub-directories will be added to the classpath. 
+
+{% hint style="info" %}
+There is also a [`com.mware.core.bootstrap.lib.HdfsLibLoader`](https://github.com/mware-solutions/bigconnect/blob/master/bc-common/src/main/java/com/mware/core/bootstrap/lib/LibDirectoryLoader.java)that can be used to load .jar files from HDFS. This is useful when running Data Workers or Process Workers as Hadoop jobs.
+{% endhint %}
+
+For the purposes of this guide, `$BIGCONNECT_DIR` will refer to the parent directory of sub-directories where your config and lib files are stored, regardless of which of the above options you choose to use
 
 ## Security
 
