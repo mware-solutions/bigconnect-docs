@@ -164,7 +164,7 @@ At the data level, fine-grained access can be controlled up to the attribute lev
 
 BigConnect is designed to be highly extensible and customizable at all levels. Being an open-source platform, the code can be altered as-is or can be extended using plugins, which is the recommended way.
 
-Please see the [Developer Guide](developer-guide/getting-started.md) for details on how to build the source code, what are the extension points and have a look at the sample plugins.
+Please see the [Developer Guide](developer-guide/build-project.md) for details on how to build the source code, what are the extension points and have a look at the sample plugins.
 
 ## Scalability
 

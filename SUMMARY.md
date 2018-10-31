@@ -15,4 +15,5 @@
 ## Developer Guide
 
 * [Getting started](developer-guide/getting-started.md)
+* [Building the project](developer-guide/build-project.md)
 
