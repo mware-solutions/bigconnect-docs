@@ -1,7 +1,3 @@
----
-description: Machine Learning Use Cases
----
-
 # Use Cases
 
 Utilizarea de modele si algoritmi de tip machine learning pentru optimizarea acivitatilor tactice si de raspuns.

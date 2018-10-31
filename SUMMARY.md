@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Intro](intro.md)
+* [Introduction](README.md)
 * [Use Cases](use-cases.md)
 
 ## Introduction
