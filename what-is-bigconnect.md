@@ -38,7 +38,7 @@ Spaces are collaborative, and users can be invited to a space and have different
 
 [ElasticSearch ](www.elastic.co)is used behind the scenes to search through the data model and compute aggregations. This means that search results are delivered near-real-time and search queries can be as complex as you can imagine.
 
-![](.gitbook/assets/image%20%2814%29.png)
+![](.gitbook/assets/image%20%2815%29.png)
 
 The UI provides a Google-like search experience, enriched with filters, sorting, refinements and spatial queries. The search field supports the Lucene query syntax so you can use special things like wildcard \(\*\), question mark \(?\), keyword matching, phrase matching, grouping, boolean queries \(AND, OR\), fuzzy queries \(~\), proximity matching \(~4\), range searches \(amount:\[500 TO 800\]\) and boosts \(^\). 
 
@@ -116,7 +116,7 @@ Any number of analysis product instances can be added inside a space to facilita
 
 For analyzing the data in its core connected form, we provide an advanced graph tool that can be used to create connections, see how objects are related, find connections between objects and more.
 
-![](.gitbook/assets/image%20%2813%29.png)
+![](.gitbook/assets/image%20%2814%29.png)
 
 The graph is interactive, you can drag objects around, create new objects and relations and explore the entire data model.
 

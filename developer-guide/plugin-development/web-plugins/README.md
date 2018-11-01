@@ -4,63 +4,6 @@ BigConnect is designed to be a single page application, but requests must be mad
 
 Web plugins are deployed alongside BigConnect inside of the web server and are used to both add custom functionality and override existing components.
 
-## Extension Points
-
-Extension points are places built into BigConnect's Web Console to define additional behavior. Custom plugins can also define extension points that can be implemented by other plugins.
-
-An extension point is simply a mapping from a string – the namespaced extension point name – to a JavaScript object. What kind of object is defined by the consumer of the extension point.
-
-All registered extension points are viewable in the admin panel, under `UI Extensions`, and in the table of contents in this document.
-
-To register some custom behavior, require the [`public/v1/api`](../../javascript/module-public_v1_api.html) module, and use the [`registry`](../../javascript/module-registry.html) member.
-
-```text
-require(['public/v1/api'], function(bc) {
-    var registry = bc.registry;
-    registry.registerExtension([extension point name], [extension point object])
-})
-```
-
-For example, to add an item to the menu bar, use the Menu bar extension point:
-
-```javascript
-bc.registry.registerExtension('org.bigconnect.menubar', {
-    title: i18n('org.bigconnect.examples.menubar.title'),
-    identifier: 'org-bigconnect-examples-menubar',
-    action: {
-        type: 'pane',
-        componentPath: 'org/bigconnect/examples/menubar/Pane'
-    },
-    welcomeTemplatePath: 'hbs!org/bigconnect/examples/menubar/welcome',
-    icon: '../img/glyphicons/white/glyphicons_066_tags@2x.png',
-    options: {
-        placementHint: 'top',
-        placementHintAfter: 'search',
-    }
-});
-```
-
-Web plugins can also define their own extension points. They do not need to be defined ahead of time, simply ask the registry for all registered extensions using a unique point name:
-
-```javascript
-registry.extensionsForPoint([extension point name]);
-// Returns array of registered objects
-```
-
-It is good practice to define some documentation for your new extension point. Documenting provides a validation function, and a description shown in the admin panel under UI Extensions. Document the extension point using  `registry.documentExtensionPoint` before prior to requesting `registry.extensionsForPoint`
-
-```javascript
-registry.documentExtensionPoint('com.example.point',
-    'Description...',
-    function () { return true; },
-    'http://example.com/docs'
-);
-```
-
-If you call `documentExtensionPoint` before `extensionsForPoint` all the extensions returned are guaranteed to have passed validation. Invalid extensions are logged as warnings in the JavaScript console.
-
-Please see the list of available extension points with descriptions and code examples under the section [Extension Point Reference](../../extension-point-reference.md).
-
 ## Development
 
 Creating a web app plugin can range from creating some JavaScript that can execute inside of BigConnect all the way to overriding the current functionality of an endpoint inside BigConnect. This means that web app plugins will always have some sort of mix of front-end and back-end components that provide functionality. 
