@@ -11,5 +11,10 @@
   * [Source code structure](developer-guide/getting-started/source-code.md)
   * [Setup for development](developer-guide/getting-started/setup-for-development.md)
   * [Contributing](developer-guide/getting-started/contributing.md)
-* [Plugin development](developer-guide/plugin-development.md)
+* [Web Framework](developer-guide/web-framework.md)
+* [Plugin development](developer-guide/plugin-development/README.md)
+  * [Web Plugins](developer-guide/plugin-development/web-plugins/README.md)
+    * [Creating a standard plugin](developer-guide/plugin-development/web-plugins/creating-a-standard-plugin.md)
+    * [Creating a React plugin](developer-guide/plugin-development/web-plugins/creating-a-react-plugin.md)
+* [Extension Point Reference](developer-guide/extension-point-reference.md)
 
