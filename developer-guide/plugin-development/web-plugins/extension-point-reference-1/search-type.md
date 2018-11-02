@@ -10,7 +10,7 @@ Provide users with alternate search interfaces through a dropdown in the search 
 
 Search extensions control how the search is executed and the results are displayed.
 
-![](../../../../.gitbook/assets/image%20%2829%29.png)
+![](../../../../.gitbook/assets/image%20%2830%29.png)
 
 ## Web Plugin
 

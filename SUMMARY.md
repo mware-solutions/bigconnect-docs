@@ -10,6 +10,7 @@
   * [Source code structure](developer-guide/getting-started/source-code.md)
   * [Setup for development](developer-guide/getting-started/setup-for-development.md)
   * [Contributing](developer-guide/getting-started/contributing.md)
+  * [Glossary](developer-guide/getting-started/glossary.md)
 * [Web Framework](developer-guide/web-framework.md)
 * [Plugin development](developer-guide/plugin-development/README.md)
   * [Data Worker Plugins](developer-guide/plugin-development/data-worker-plugins/README.md)
@@ -52,5 +53,5 @@
       * [User Profile Section](developer-guide/plugin-development/web-plugins/extension-point-reference-1/user-profile-section.md)
       * [Visibility](developer-guide/plugin-development/web-plugins/extension-point-reference-1/visibility.md)
       * [Websocket](developer-guide/plugin-development/web-plugins/extension-point-reference-1/websocket.md)
-* [Glossary](developer-guide/glossary.md)
+* [REST APIs](developer-guide/rest-apis.md)
 
