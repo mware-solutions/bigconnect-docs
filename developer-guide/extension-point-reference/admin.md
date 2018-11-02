@@ -4,6 +4,8 @@
 
 Admin extensions allow sections to be placed in the admin pane that when clicked, open a custom component. This tutorial registers three admin extensions that show React, Flight, and an admin extension that opens a link.
 
+![](../../.gitbook/assets/image%20%289%29.png)
+
 ## Create a web plugin
 
 First, create the web plugin that registers the resources.

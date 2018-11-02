@@ -10,7 +10,7 @@ All registered extension points are viewable in the admin panel, under `UI Exten
 
 To register some custom behavior, require the [`public/v1/api`](https://docs.bigconnect.io/~/drafts/-LQEgexO3YP4CDrrELDr/primary/javascript/module-public_v1_api.html) module, and use the [`registry`](https://docs.bigconnect.io/~/drafts/-LQEgexO3YP4CDrrELDr/primary/javascript/module-registry.html) member.
 
-```text
+```javascript
 require(['public/v1/api'], function(bc) {    var registry = bc.registry;    registry.registerExtension([extension point name], [extension point object])})
 ```
 
@@ -32,7 +32,13 @@ It is good practice to define some documentation for your new extension point. D
 registry.documentExtensionPoint('com.example.point',    'Description...',    function () { return true; },    'http://example.com/docs');
 ```
 
-If you call `documentExtensionPoint` before `extensionsForPoint` all the extensions returned are guaranteed to have passed validation. Invalid extensions are logged as warnings in the JavaScript console.
+If you call `documentExtensionPoint` before `extensionsForPoint` all the extensions returned are guaranteed to have passed validation. Invalid extensions are logged as warnings in the JavaScript console. This documentation appears in the admin pane under UI Extensions. Add an external documentation URL using an optional 4th parameter.
 
-Please see the list of available extension points with descriptions and code examples under the section [Extension Point Reference](https://docs.bigconnect.io/~/drafts/-LQEgexO3YP4CDrrELDr/primary/developer-guide/extension-point-reference).
+![](../../../.gitbook/assets/image%20%2815%29.png)
+
+Invalid extensions are logged as warnings in the browser JavaScript console.
+
+Please see the list of available extension points with descriptions and code examples under the section [Extension Point Reference](../../extension-point-reference/).
+
+
 

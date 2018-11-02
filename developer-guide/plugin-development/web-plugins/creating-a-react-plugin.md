@@ -1,6 +1,6 @@
 # Creating a React plugin
 
-Writing components in [React](https://facebook.github.io/react) is now the preferred way to extend the Web Console with custom features. Most extension points already support React, but check their [documentation](extension-point-reference/) to make sure.
+Writing components in [React](https://facebook.github.io/react) is now the preferred way to extend the Web Console with custom features. Most extension points already support React, but check their [documentation](../../extension-point-reference/) to make sure.
 
 When writing a web plugin, there are two methods to include React components:
 
