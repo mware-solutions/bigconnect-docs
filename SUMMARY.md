@@ -2,7 +2,6 @@
 
 * [Introduction](README.md)
 * [Feature Highlights](what-is-bigconnect.md)
-* [Use Cases](use-cases.md)
 
 ## Developer Guide
 
