@@ -1,10 +1,14 @@
+---
+description: Create new dashboard widgets
+---
+
 # Dashboard Item
 
 [Example code](https://github.com/mware-solutions/doc-examples/blob/master/extension-dashboard-item)
 
 Dashboard items are user-selectable content placed on the dashboard. These could be charts using the `report` configuration or custom components in React or FlightJS.
 
-![](../../.gitbook/assets/image%20%2810%29.png)
+![](../../.gitbook/assets/image%20%2814%29.png)
 
 In this tutorial we will create two new dashboard items:
 
@@ -23,6 +27,8 @@ app.registerJavaScriptComponent("/com/mware/examples/dashboard_item/Config.jsx")
 
 app.registerResourceBundle("/com/mware/examples/dashboard_item/messages.properties");
 ```
+
+[DashboardItemWebAppPlugin.java \(lines 16–21\)](https://github.com/mware-solutions/doc-examples/blob/master/extension-dashboard-item/src/main/java/com/mware/examples/dashboard_item/DashboardItemWebAppPlugin.java#L16-L21)
 
 ## Register Extension
 
@@ -60,6 +66,8 @@ bc.registry.registerExtension('org.bigconnect.web.dashboard.item', {
     });
 ```
 
+[plugin.js \(lines 3–31\)](https://github.com/mware-solutions/doc-examples/blob/master/extension-dashboard-item/src/main/resources/com/mware/examples/dashboard_item/plugin.js#L3-L31)
+
 ## Report Configuration
 
 ```javascript
@@ -79,6 +87,8 @@ endpointParameters: {
 }
 ```
 
+[plugin.js \(lines 8–21\)](https://github.com/mware-solutions/doc-examples/blob/master/extension-dashboard-item/src/main/resources/com/mware/examples/dashboard_item/plugin.js#L8-L21)
+
 ## Create the Custom Component
 
 The custom component will also register a configuration component. It will access a `count` property in the configuration and display the current value.
@@ -89,6 +99,8 @@ The custom component will also register a configuration component. It will acces
     })
 });
 ```
+
+[React.jsx \(lines 11–14\)](https://github.com/mware-solutions/doc-examples/blob/master/extension-dashboard-item/src/main/resources/com/mware/examples/dashboard_item/React.jsx#L11-L14)
 
 In the configuration component, we increment the count \(creating if needed\) when the button is clicked.
 
@@ -103,6 +115,8 @@ this.props.configurationChanged({
 })
 ```
 
+[Config.jsx \(lines 15–22\)](https://github.com/mware-solutions/doc-examples/blob/master/extension-dashboard-item/src/main/resources/com/mware/examples/dashboard_item/Config.jsx#L15-L22)
+
 ## Wiring Refresh
 
 Dashboard triggers `refreshData` on all items when the user clicks the refresh button in the top-right corner. To wire this message in a React component we need the DOM Element of the item, so first register a `ref` in `render()`
@@ -110,6 +124,8 @@ Dashboard triggers `refreshData` on all items when the user clicks the refresh b
 ```text
 <div ref="wrap">
 ```
+
+[React.jsx \(line 23\)](https://github.com/mware-solutions/doc-examples/blob/master/extension-dashboard-item/src/main/resources/com/mware/examples/dashboard_item/React.jsx#L23)
 
 Then, listen for the event, we must use Jquery to listen as Flight uses non-standard event triggering.
 
@@ -125,6 +141,8 @@ componentDidMount() {
 },
 ```
 
+[React.jsx \(lines 7–15\)](https://github.com/mware-solutions/doc-examples/blob/master/extension-dashboard-item/src/main/resources/com/mware/examples/dashboard_item/React.jsx#L7-L15)
+
 Finally, unregister the listener on teardown
 
 ```javascript
@@ -133,11 +151,13 @@ componentWillUnmount() {
 },
 ```
 
-## Custom Configuration Interface Elements
+[React.jsx \(lines 16–18\)](https://github.com/mware-solutions/doc-examples/blob/master/extension-dashboard-item/src/main/resources/com/mware/examples/dashboard_item/React.jsx#L16-L18)
+
+## Custom UI Elements
 
 
 
-![](../../.gitbook/assets/image%20%287%29.png)
+![](../../.gitbook/assets/image%20%2811%29.png)
 
 Provide a `configurationPath` to the extension to add an additional user interface component in the configure popover. The figure describes how the configuration interface is generated for the saved search dashboard item.
 
@@ -176,4 +196,6 @@ var { item, extension } = this.props,
 item = { ...item, configuration }
 this.props.configurationChanged({ item, extension })
 ```
+
+
 

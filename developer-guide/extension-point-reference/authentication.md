@@ -1,10 +1,14 @@
+---
+description: Create custom login authentication mechanisms
+---
+
 # Authentication
 
 [Example code](https://github.com/mware-solutions/doc-examples/blob/master/extension-authentication)
 
 Create custom login authentication mechanisms.
 
-![](../../.gitbook/assets/image%20%282%29.png)
+![](../../.gitbook/assets/image%20%285%29.png)
 
 ## Create a web plugin
 
@@ -19,6 +23,8 @@ app.registerResourceBundle("/com/mware/examples/authentication/messages.properti
 
 app.post(AuthenticationHandler.LOGIN_PATH, login);
 ```
+
+[ExampleAuthenticationPlugin.java \(lines 24–30\)](https://github.com/mware-solutions/doc-examples/blob/master/extension-authentication/src/main/java/com/mware/examples/authentication/ExampleAuthenticationPlugin.java#L24-L30)
 
 This extension deviates from others in that the authentication `plugin.js` is registered using `registerBeforeAuthenticationJavaScript`. Since all plugin JavaScript isn't loaded until after login, we need a different way to add scripts to the page earlier. Only the plugin file that registers the extension needs to be registered in this way. The actual authentication component is registered using `registerJavaScript` with the second parameter, `includeInPage` set to false, resulting in the component not being loaded on page load, but is always available to RequireJS.
 
@@ -35,6 +41,8 @@ define(['public/v1/api'], function(bc) {
     })
 });
 ```
+
+[plugin.js](https://github.com/mware-solutions/doc-examples/blob/master/extension-authentication/src/main/resources/com/mware/examples/authentication/plugin.js)
 
 ## Create the JS Component
 
@@ -157,9 +165,10 @@ define([
             }
         };
     }
-
 });
 ```
+
+[authentication.js](https://github.com/mware-solutions/doc-examples/blob/master/extension-authentication/src/main/resources/com/mware/examples/authentication/authentication.js)
 
 When the login request succeeds, the component triggers `loginSuccess`, this notifies BigConnect that the application loading process should attempt to continue loading. If the session is not valid, the front-end state is undefined.
 
@@ -179,6 +188,8 @@ $.post('login', {
     self.trigger('loginSuccess');
 })
 ```
+
+[authentication.js \(lines 89–102\)](https://github.com/mware-solutions/doc-examples/blob/master/extension-authentication/src/main/resources/com/mware/examples/authentication/authentication.js#L89-L102)
 
 ## Login Route
 
@@ -205,4 +216,6 @@ public JSONObject handle(
     }
 }
 ```
+
+[Login.java \(lines 27–45\)](https://github.com/mware-solutions/doc-examples/blob/master/extension-authentication/src/main/java/com/mware/examples/authentication/Login.java#L27-L45)
 

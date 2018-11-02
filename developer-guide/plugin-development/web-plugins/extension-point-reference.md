@@ -34,7 +34,7 @@ registry.documentExtensionPoint('com.example.point',    'Description...',    fun
 
 If you call `documentExtensionPoint` before `extensionsForPoint` all the extensions returned are guaranteed to have passed validation. Invalid extensions are logged as warnings in the JavaScript console. This documentation appears in the admin pane under UI Extensions. Add an external documentation URL using an optional 4th parameter.
 
-![](../../../.gitbook/assets/image%20%2815%29.png)
+![](../../../.gitbook/assets/image%20%2819%29.png)
 
 Invalid extensions are logged as warnings in the browser JavaScript console.
 

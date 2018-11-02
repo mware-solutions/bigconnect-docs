@@ -1,10 +1,14 @@
+---
+description: Add additional items to the activity panel
+---
+
 # Activity
 
 [Example code](https://github.com/mware-solutions/doc-examples/tree/master/extension-activity)
 
 Activity extension points allow plugins to add additional items to the activity panel \(opened via the gears menu bar icon.\) These rows can show the progress of a long-running process or a front-end task using start/stop events.
 
-![](../../.gitbook/assets/image%20%2819%29.png)
+![](../../.gitbook/assets/image%20%2825%29.png)
 
 This tutorial will create an example long-running process, and an activity item that shows its progress, along with a custom finished component. For details on creating the back-end long-running process, see the tutorial code link above.
 
@@ -30,6 +34,8 @@ app.registerResourceBundle("/com/mware/examples/activity/messages.properties");
 app.post("/com/mware/examples/activity/start", authenticator, csrfProtector, ReadPrivilegeFilter.class, StartExample.class);
 ```
 
+[ActivityWebAppPlugin.java \(lines 21–28\)](https://github.com/mware-solutions/doc-examples/blob/master/extension-activity/src/main/java/com/mware/examples/activity/ActivityWebAppPlugin.java#L21-L28)
+
 ## Internationalization
 
 Add a message bundle key for the type of activity
@@ -37,6 +43,8 @@ Add a message bundle key for the type of activity
 ```text
 activity.tasks.type.com-mware-examples-activity=Example
 ```
+
+[messages.properties \(line 1\)](https://github.com/mware-solutions/doc-examples/blob/master/extension-activity/src/main/resources/com/mware/examples/activity/messages.properties#L1)
 
 ## **Finished Interface**
 
@@ -55,6 +63,8 @@ define(['react'], function(React) {
     return Finished;
 })
 ```
+
+[Finished.jsx \(lines 1–11\)](https://github.com/mware-solutions/doc-examples/blob/master/extension-activity/src/main/resources/com/mware/examples/activity/Finished.jsx#L1-L11)
 
 
 
