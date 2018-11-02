@@ -38,7 +38,7 @@ If you call `documentExtensionPoint` before `extensionsForPoint` all the extensi
 
 Invalid extensions are logged as warnings in the browser JavaScript console.
 
-Please see the list of available extension points with descriptions and code examples under the section [Extension Point Reference](../../extension-point-reference/).
+Please see the list of available extension points with descriptions and code examples under the section [Extension Point Reference](extension-point-reference-1/).
 
 
 

@@ -18,7 +18,7 @@ The `children` defined in a layout component can be references \(`ref`\) to othe
 
 This tutorial will use layout components to override the body of all elements to include a new section above properties. Another extension will be created to modify the body of `popup` views in the graph \(open from the entity's context menu or long press on the entity to activate.\)
 
-![](../../.gitbook/assets/desc.png)
+![](../../../../.gitbook/assets/desc.png)
 
 ## Web Plugin
 

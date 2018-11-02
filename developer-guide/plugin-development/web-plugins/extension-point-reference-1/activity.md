@@ -8,7 +8,7 @@ description: Add additional items to the activity panel
 
 Activity extension points allow plugins to add additional items to the activity panel \(opened via the gears menu bar icon.\) These rows can show the progress of a long-running process or a front-end task using start/stop events.
 
-![](../../.gitbook/assets/image%20%2825%29.png)
+![](../../../../.gitbook/assets/image%20%2825%29.png)
 
 This tutorial will create an example long-running process, and an activity item that shows its progress, along with a custom finished component. For details on creating the back-end long-running process, see the tutorial code link above.
 

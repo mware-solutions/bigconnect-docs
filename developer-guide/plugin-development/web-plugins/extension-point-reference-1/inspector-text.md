@@ -12,7 +12,7 @@ Replace the default text collapsible section content in the Inspector.
 The console will show a warning if multiple extensions are found for a given vertex, name, and key. The extension used is non-deterministic.
 {% endhint %}
 
-![](../../.gitbook/assets/image.png)
+![](../../../../.gitbook/assets/image.png)
 
 ## Web Plugin
 

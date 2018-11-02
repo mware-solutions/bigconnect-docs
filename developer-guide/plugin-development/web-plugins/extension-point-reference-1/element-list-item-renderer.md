@@ -8,7 +8,7 @@ description: Adjust how list items are displayed
 
 This allows plugins to adjust how list items are displayed in search results, Inspector, or anywhere else the Element List Component is used.
 
-![](../../.gitbook/assets/image%20%283%29.png)
+![](../../../../.gitbook/assets/image%20%283%29.png)
 
 ## Web Plugin
 
