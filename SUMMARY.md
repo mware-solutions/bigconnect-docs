@@ -3,6 +3,13 @@
 * [Introduction](README.md)
 * [Feature Highlights](what-is-bigconnect.md)
 
+## User Guide
+
+* [Introduction](user-guide/introduction.md)
+* [Getting Started](user-guide/getting-started/README.md)
+  * [Installing BigConnect](user-guide/getting-started/installing-bigconnect.md)
+  * [Starting and stopping](user-guide/getting-started/starting-and-stopping.md)
+
 ## Developer Guide
 
 * [Architecture and Concepts](developer-guide/things-you-should-know.md)
