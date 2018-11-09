@@ -1,4 +1,4 @@
-# Getting Started
+# First Steps
 
 This section includes information on how to setup BigConnect and get it running, including:
 

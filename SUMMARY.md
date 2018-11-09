@@ -6,10 +6,12 @@
 ## User Guide
 
 * [Introduction](user-guide/introduction.md)
-* [Getting Started](user-guide/getting-started/README.md)
+* [First Steps](user-guide/getting-started/README.md)
   * [Installing BigConnect](user-guide/getting-started/installing-bigconnect.md)
   * [Starting and stopping](user-guide/getting-started/starting-and-stopping.md)
   * [Accessing BigConnect](user-guide/getting-started/accessing-bigconnect.md)
+* [Using BigConnect](user-guide/dashboard.md)
+* [Configuration](user-guide/configuration.md)
 
 ## Developer Guide
 
