@@ -7,6 +7,19 @@ This section includes information on how to setup BigConnect and get it running,
 * Starting
 * Configuring
 
+## Flavors
+
+BigConnect comes in two packaging options:
+
+* **Hadoop** - bundled with single-node Hadoop, Accumulo, ElasticSearch and ZooKeeper. This packaging is only available on Linux and MacOS.
+* **SQL** - bundled with an in-process H2 database and ElasticSearch for desktop use. This packaging is available on Linux, MacOS and Windows.
+
+{% hint style="warning" %}
+Both flavors can be used to test-drive and develop on top of BigConnect and are not intended for production use !   
+  
+Production deployments should be carefully planned in terms of resiliency, performance, availability and scalability. While you can do this yourself, we highly recommend getting in touch or using a commercially supported version of BigConnect.
+{% endhint %}
+
 ## Supported Platforms
 
 Installation packages are provided for and tested against Linux, MacOS X, and Windows. Since BigConnect runs on Java, Hadoop, Accumulo and ElasticSearch, we also include the necessary binaries and files for these platforms. Running BigConnect against other versions of the included binaries is not supported.
