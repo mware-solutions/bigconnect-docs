@@ -31,7 +31,7 @@ app.registerResourceBundle("/com/mware/examples/admin/messages.properties");
 Register the admin extensions in the `plugin.js` file:
 
 ```javascript
- bc.registry.registerExtension('com.mware.admin', {
+ bc.registry.registerExtension('org.bigconnect.admin', {
   section: i18n('com.mware.examples.admin.section'),
   name: i18n('com.mware.examples.admin.react.name'),
   subtitle: i18n('com.mware.examples.admin.react.subtitle'),

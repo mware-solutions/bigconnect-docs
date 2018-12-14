@@ -11,8 +11,8 @@ Plugin to add new items to vertex or edge context menu. Providing a `shouldDisab
 To add a divider:
 
 ```javascript
-registry.registerExtension('com.mware.vertex.menu', 'DIVIDER');  // vertex menu
-registry.registerExtension('com.mware.edge.menu', 'DIVIDER');  //edge menu
+registry.registerExtension('org.bigconnect.vertex.menu', 'DIVIDER');  // vertex menu
+registry.registerExtension('org.bigconnect.edge.menu', 'DIVIDER');  //edge menu
 ```
 
 ## Example
