@@ -12,59 +12,26 @@ BigConnect only supports 64 bit operating systems.
 
 BigConnect is provided for Linux and MacOS as a `.tar.gz` package. These packages are the easiest formats to use when trying out the platform and are free to use under the Apache 2.0 License. 
 
-The latest stable version of BigConnect can be found on the [Download BigConnect](https://bigconnect.io) page and older versions are available in the [Past Releases](https://bigconnect.io) page.
+The latest stable version of BigConnect can be found on the [Download BigConnect](https://www.bigconnect.io/download-free) page.
 
-### Download and install the Linux Hadoop package
-
-The `.tar.gz` archive for the latest BigConnect Linux Hadoop release can be downloaded and installed as follows:
-
-```bash
-wget http://bits.bigconnect.io/downloads/bc/bc-3.5.0-hadoop-linux-x86_64.tar.gz
-shasum -a 512 bc-3.5.0-hadoop-linux-x86_64.tar.gz
-tar -xzf bc-3.5.0-hadoop-linux-x86_64.tar.gz
-cd bc-3.5.0-hadoop-linux-x86_64/
-```
-
-Compare the SHA produced by or `shasum` with the [published SHA](http://bits.bigconnect.io/downloads/bc/bc-3.5.0-x86_64.tar.gz.sha512) value.
-
-The folder `bc-3.5.0-hadoop-linux-x86_64/` will be referenced further as `$BIGCONNECT_DIR`
-
-### Download and install the Linux SQL package
+### Download and install the Linux package
 
 The `.tar.gz` archive for the latest BigConnect Linux SQL release can be downloaded and installed as follows:
 
 ```bash
-wget http://bits.bigconnect.io/downloads/bc/bc-3.5.0-sql-linux-x86_64.tar.gz
-shasum -a 512 bc-3.5.0-sql-linux-x86_64.tar.gz
-tar -xzf bc-3.5.0-sql-linux-x86_64.tar.gz
-cd bc-3.5.0-sql-linux-x86_64/
+wget http://bits.bigconnect.io/downloads/bc/bc-A.B.C-linux-x86_64.tar.gz
+shasum -a 512 bc-A.B.C-linux-x86_64.tar.gz
+tar -xzf bc-A.B.C-linux-x86_64.tar.gz
+cd bc-A.B.C-sql-linux-x86_64/
 ```
+
+A.B.C is the latest BigConnect release version found on the [Download](https://www.bigconnect.io/download-free) page.
 
 Compare the SHA produced by or `shasum` with the [published SHA](http://bits.bigconnect.io/downloads/bc/bc-3.5.0-x86_64.tar.gz.sha512) value.
 
-The folder `bc-3.5.0-sql-linux-x86_64/` will be referenced further as `$BIGCONNECT_DIR`
+The folder `bc-A.B.C-linux-x86_64/` will be referenced further as `$BIGCONNECT_DIR`
 
-### Directory layout of Linux Hadoop`.tar.gz` packages
-
-The `.tar.gz` packages are entirely self-contained. All files and directories are, by default, contained within `$BIGCONNECT_DIR` — the directory created when unpacking the archive.
-
-This is very convenient because you don’t have to create any directories to start using BigConnect, and uninstalling BigConnect is as easy as removing the `$BIGCONNECT_DIR` directory. However, it is advisable to change the default locations of the config and data directories so that you do not delete important data later on.
-
-| Type | Description |
-| :--- | :--- |
-| **accumulo** | Apache Accumulo pre-configured for BigConnect and single-node operation |
-| **config** | Configuration files |
-| **datastore** | The location of the data files written to disk by BigConect, Accumulo, Hadoop, ZooKeeper and ElasticSearch |
-| **elasticsearch** | ElasticSearch distribution pre-configured for BigConnect |
-| **hadoop** | Apache Hadoop pre-configured for single-node operation |
-| **jdk** | Java 8 Development Kit |
-| **log** | Log files for all services |
-| **lib** | System libraries needed by BigConnect |
-| **lib/ext** | Additional libraries added by users \(eg. database drivers\) |
-| **webapp** | BigConnect Web Console files |
-| **zookeeper** | ZooKeeper distribution pre-configured for BigConnect |
-
-### Directory layout of Linux SQL`.tar.gz` packages
+### Directory layout of Linux `.tar.gz` packages
 
 The `.tar.gz` packages are entirely self-contained. All files and directories are, by default, contained within `$BIGCONNECT_DIR` — the directory created when unpacking the archive.
 
@@ -73,10 +40,11 @@ This is very convenient because you don’t have to create any directories to st
 | Type | Description |
 | :--- | :--- |
 | **config** | Configuration files |
-| **datastore** | The location of the data files written to disk by BigConect, H2 and ElasticSearch |
-| **jdk** | Java 8 Development Kit |
-| **log** | Log files for all services |
+| **datastore** | The location of the data files written to disk by BigConnect |
+| **log** | Log files |
 | **lib** | System libraries needed by BigConnect |
-| **lib/ext** | Additional libraries added by users \(eg. database drivers\) |
+| **lib/ext** | Additional libraries added by users \(eg. database drivers and plugins\) |
 | **webapp** | BigConnect Web Console files |
+
+
 
