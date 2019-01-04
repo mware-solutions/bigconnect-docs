@@ -6,6 +6,8 @@ The provided packages include all the necessary binaries and files to run the pl
 
 {% hint style="info" %}
 BigConnect only supports 64 bit operating systems.
+
+Please make sure Java 8 64bit is installed and the `java` command is included in the user PATH
 {% endhint %}
 
 ## Install with `.tar.gz` format

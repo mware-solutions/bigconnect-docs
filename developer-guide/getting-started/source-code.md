@@ -14,20 +14,18 @@ Contains the core of the platform and has all the code for the graph engine, dat
 
 Directory structure:
 
-* `bc-common` - common code shared among the multiple BigConnect components
-* `bc-graph-engine` - graph engine code
-  * `ge-accumulo` - Apache Accumulo implementation of the graph engine
-  * `ge-accumulo-iterators` - Special iterators to be deployed on Accumulo
-  * `ge-cli` - groovy shell
-  * `ge-core` - generic implementation and interfaces for the graph engine
-  * `ge-cypher` - support for Cypher queries
-  * `ge-elasticsearch` - ElasticSearch search implementation of the graph engine
-  * `ge-elasticsearch-plugin` - ElasticSearch plugins that handles authorization
-  * `ge-inmemory` - In-memory implementation of the graph engine
-  * `ge-security` - shared files for the security model
-  * `ge-sql` - SQL implementation of the graph engine \(for test purposes\)
-  * `ge-test` - Base test files
-  * `ge-tools` - Graph Backup/Restore tools
+* `common` - common code shared among the multiple BigConnect components
+  * `core` - core BigConnect services for users, data workers, notifications, workspaces etc.
+  * `cypher` - support for Cypher queries
+  * `elastic` - Search Index implementation for ElasticSearch
+  * `graph` - core graph engine API
+  * `security` - shared files for the security model
+  * `sql` - support for SQL queries
+* `plugins` - various plugins such as RocksDB storage, Spark integration, Proxy etc.
+* `proxyserver-api` - Java client driver
+* `proxyserver` - Java server
+* `shell` - Groovy shell
+* `test` - testing harness
 
 ## The _dw-plugins_ repository
 
