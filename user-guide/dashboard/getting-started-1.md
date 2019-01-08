@@ -46,11 +46,11 @@ The **Welcome to BigConnect** is useful only for new joiners so let us remove th
 
 Currently we have 3 widgets present on our dashboard : **Entity Counts** \( amount of independent entities we have \), **Notifications** \( user related notifications \) and **Relationship Counts** \( number of relations between our entities \).
 
-**Attention!** If one decides to remove the **Notifications** widget then one will not be able to see any user related notifications. \( e.g. Being added to a new space \)
+**Attention!** If one decides to remove the **Notifications** widget then one will not be able to see any notifications. \( e.g. Being added to a new space \)
 
 These initial widgets only show basic information. For real use cases one will use the more advanced widgets. Let us click once again the **Edit** button and then **Add** widget in order to have a look at what other widgets are available.
 
-**Behaviour** - ****enables a user to configure an existing behaviour and to display it on the **Dashboard**. Please checkout the corresponding section for more information.
+**Behaviour** - ****enables a user to configure an existing behaviour and to display it on the **Dashboard**. 
 
 **Entity Counts** - displays the total counts of concepts or entities loaded in BigConnect. Please take into consideration that this is not limited to your user, but in fact to all existing users.
 
