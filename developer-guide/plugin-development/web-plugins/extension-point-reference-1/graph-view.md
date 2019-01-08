@@ -10,7 +10,7 @@ Plugin to add custom view components which overlay the graph. Used for toolbars,
 
 Views can be Flight or React components and should be styled to be absolutely positioned. The absolute position given is relative to the graph. 0,0 is top-left corner of graph.
 
-![](../../../../.gitbook/assets/image%20%2832%29.png)
+![](../../../../.gitbook/assets/image%20%2834%29.png)
 
 ## Web Plugin
 

@@ -2,13 +2,13 @@
 
 The first thing you will see is the login screen.
 
-![Login](../../.gitbook/assets/image%20%2839%29.png)
+![Login](../../.gitbook/assets/image%20%2842%29.png)
 
 If you are using the default installation guide you can introduce any username and click the "Log In" button.
 
 This will bring you to the welcome page called **Dashboard**.
 
-![](../../.gitbook/assets/image%20%281%29.png)
+![](../../.gitbook/assets/image%20%282%29.png)
 
 Important things to notice 
 
@@ -17,16 +17,16 @@ Important things to notice
 
 **Attention**! By default the dashboard is private and can be seen only by the current user.
 
-![](../../.gitbook/assets/image%20%2833%29.png)
+![](../../.gitbook/assets/image%20%2835%29.png)
 
 * The **Welcome to BigConnect** widget offers the basic information regarding all the actions that a user can trigger in the landing screen. 
 * The most important two are **Discover** and **Analyze** which can be found right at the top besides the **Dashboard** tab. ****The former handles creating, editing and saving searches and the later data visualization, enrichment, persistence etc.
 
-![](../../.gitbook/assets/image%20%2844%29.png)
+![](../../.gitbook/assets/image%20%2847%29.png)
 
 * Present on the navigation bar we can find the following:
 
-![](../../.gitbook/assets/image%20%2817%29.png)
+![](../../.gitbook/assets/image%20%2818%29.png)
 
 The first icon is the **Activity**. As we learned earlier BigConnect supports long running processes. In order to track their progress after being started one can find them depicted in this view. Please pay attention that regular/system notifications are not to be shown here.
 
@@ -36,13 +36,13 @@ The third represents the **username**. If one clicks on it two new options are d
 
 * Underneath the navigation bar one can find 2 buttons : **Edit** and **Refresh**. As one might suspect when clicking on **Edit** the whole dashboard becomes interactive. The **Refresh** performs live reload of the available dashboard widgets. Let's click on **Edit**.
 
-![](../../.gitbook/assets/image%20%282%29.png)
+![](../../.gitbook/assets/image%20%283%29.png)
 
 As one can see above there is now the possibility to remove certain widget or to add new ones.
 
 The **Welcome to BigConnect** is useful only for new joiners so let us remove that. Also we may want to rearrange the widgets a bit. Please remember to click the **Done Editing** button when finished or simply press the **Esc** key otherwise nothing will be saved. Please find below our new simplified dashboard : 
 
-![](../../.gitbook/assets/image%20%2810%29.png)
+![](../../.gitbook/assets/image%20%2811%29.png)
 
 Currently we have 3 widgets present on our dashboard : **Entity Counts** \( amount of independent entities we have \), **Notifications** \( user related notifications \) and **Relationship Counts** \( number of relations between our entities \).
 
@@ -66,9 +66,9 @@ These initial widgets only show basic information. For real use cases one will u
 
 \*\*\*\*
 
-![](../../.gitbook/assets/image%20%2816%29.png)
+![](../../.gitbook/assets/image%20%2817%29.png)
 
-![](../../.gitbook/assets/image%20%286%29.png)
+![](../../.gitbook/assets/image%20%287%29.png)
 
 
 

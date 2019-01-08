@@ -8,7 +8,7 @@ description: Add a section to the admin page
 
 Admin extensions allow sections to be added in the admin pane that when clicked, open a custom component. This tutorial registers three admin extensions that show React, Flight, and an admin extension that opens a link.
 
-![](../../../../.gitbook/assets/image%20%2823%29.png)
+![](../../../../.gitbook/assets/image%20%2824%29.png)
 
 ## Create a web plugin
 
