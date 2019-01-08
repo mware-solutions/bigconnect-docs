@@ -10,7 +10,8 @@
   * [Installing BigConnect](user-guide/getting-started/installing-bigconnect.md)
   * [Starting and stopping](user-guide/getting-started/starting-and-stopping.md)
   * [Accessing BigConnect](user-guide/getting-started/accessing-bigconnect.md)
-* [Using BigConnect](user-guide/dashboard.md)
+* [Using BigConnect](user-guide/dashboard/README.md)
+  * [Getting started](user-guide/dashboard/getting-started-1.md)
 * [Configuration](user-guide/configuration.md)
 
 ## Developer Guide
