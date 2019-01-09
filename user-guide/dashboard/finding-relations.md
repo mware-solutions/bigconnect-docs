@@ -8,10 +8,12 @@ Let us click on the **Analyze** tab.
 
 ![](../../.gitbook/assets/image%20%2843%29.png)
 
-One thing to remember is that data can be visualized by using a BigConnect tool. Currently there are 2 tools available :
+Data can be visualized by using a BigConnect tool. Currently there are 2 tools available :
 
 * Graph - entities become vertices and relationships become edges
 * Map - based on geolocation information one can visualize their data across a specific region
+
+As a rule of thumb BigConnect prefers structured data \( db, excel files etc. \) due to the fact that it can easily configure relationships prior to data ingestion. If we were to provide unstructured data the same output can be obtained but with more steps in between that require both manual and automatic intervention. These aspects will be covered in more depth in future sections.
 
 ## Starting off
 
@@ -39,7 +41,9 @@ We will click Attach Files and select the relevant files.
 
 ![](../../.gitbook/assets/image%20%2855%29.png)
 
-We have chosen 1 file and can now click on **Import**.
+We have chosen 1 file and can now click on **Import**. ****
+
+Please pay attention that if we were to upload an excel file BigConnect recognizes that it is a semi**-**structured data and will allow us to setup some smart mappings prior to data ingestion. For the moment though we will be using a simple text file.
 
 ![](../../.gitbook/assets/image%20%2832%29.png)
 
@@ -51,7 +55,9 @@ If our ontology were to contain the **Person** and **City** concepts then BigCon
 
 ![](../../.gitbook/assets/image%20%2868%29.png)
 
-Important!
+\*\*\*\*
+
+**Important**!
 
 1. We can simply use drag and drop to add additional files to our graph that will be inferred to entities, relationships etc.
 
