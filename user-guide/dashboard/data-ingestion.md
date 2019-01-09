@@ -4,6 +4,8 @@ As discussed in a previous section next to the username there are 2 icons: the f
 
 Let us have a quick look at the **Administration** panel and to understand some basics. Please pay attention that this is available only if you have the **ADMIN** privilege. You can consult all the privileges linked to your account by going to **Preferences** under the username icon.
 
+Another thing to remember is that privileges are not the same as roles. Currently only users with the administration role have full access to all BigConnect information. 
+
 ![](../../.gitbook/assets/image%20%2872%29.png)
 
 As depicted above there are multiple subcategories and we will go in depth with the most important ones:
@@ -75,7 +77,11 @@ As we can see above there are multiple steps to be configured and they will be e
 
 The power of BigConnect lies in its ability to correlate data using a specific ontology. Basically data is identified based on the setup preferences. For example if our use case needs a concept **City** to depict all city names then we can simply include it in the ontology and then all the data can be processed accordingly. 
 
-By default BigConnect ships with a default ontology that can be modified to suit one's needs.  One important thing to remember is that properties are inherited so if we create a new concept **City** under **Thing** of course then we do not need to repeat all the already defined properties that **Thing** has.
+By default BigConnect ships with a default ontology that can be modified to suit one's needs.  It is composed of 3 core components: concepts, properties and relationships. 
+
+One important thing to remember is that properties are inherited so if we create a new concept **City** under **Thing** then we do not need to repeat all the already defined properties that **Thing** has. Please also consider the fact that if one wants to search using a property then that property has to be made searchable. Otherwise it won't have any impact in the data discovery process.
+
+As a last remark in the Relationships section one can only see the custom relationships and not all the existing relationships. e.g. **Has Entity** will not be included.
 
 ### Plugin
 
