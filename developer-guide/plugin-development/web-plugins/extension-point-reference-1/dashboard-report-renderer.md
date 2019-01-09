@@ -8,11 +8,11 @@ description: Add new types of charts
 
 Adds additional output types for dashboard items that define a `report` or `item.configuration.report`
 
-![](../../../../.gitbook/assets/image%20%2854%29.png)
+![](../../../../.gitbook/assets/image%20%2862%29.png)
 
 For this tutorial, we'll create a new JSON renderer that simply takes the result, formats it, then prints it.
 
-![](../../../../.gitbook/assets/image%20%2822%29.png)
+![](../../../../.gitbook/assets/image%20%2827%29.png)
 
 ## Create the Web Plugin
 
