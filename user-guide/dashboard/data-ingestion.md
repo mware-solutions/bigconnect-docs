@@ -21,17 +21,17 @@ As depicted above there are multiple subcategories and we will go in depth with 
 
 ### **Behaviour**
 
-A behaviour is an aggregation of multiple saved searches. Currently it can be used only in the **Dashboard** for visualization.
+A behaviour is a union between multiple saved searches. Currently it can be used only in the **Dashboard** for visualization.
 
 Let us take a basic example like returning all persons that have already paid their taxes for their properties this year but that do not have children yet.
 
-For using a behaviour we should define 2 saved searches: TAXES\_PAID and NO\_CHILDREN. 
+For using a behaviour we should define 2 saved searches: TAXES\_PAID and NO\_CHILDREN.
 
 Then we simply click on the **Add** button that will take us to the following: 
 
 ![](../../.gitbook/assets/image%20%2868%29.png)
 
-A behaviour has an overall score, in this case 4, and we add the 2 saved queries using the **Add Query** button. Please take into consideration that if the score of a query is higher than the threshold then the behaviour will display that data.
+A behaviour has an overall score, in this case 4, and we add the 2 saved queries using the **Add Query** button. Please take into consideration that the score is given only if the search query returns any data. If the score of a query is higher than the threshold then the behaviour will display the search results no matter the score of the other query. As a last mention if the same concept is found by both searches it will be displayed only once.
 
 ### Extract
 
