@@ -2,7 +2,7 @@
 
 The first thing you will see is the login screen.
 
-![Login](../../.gitbook/assets/image%20%2850%29.png)
+![Login](../../.gitbook/assets/image%20%2852%29.png)
 
 If you are using the default installation guide you can introduce any username and click the "Log In" button.
 
@@ -17,12 +17,12 @@ Important things to notice
 
 **Attention**! By default the dashboard is private and can be seen only by the current user.
 
-![](../../.gitbook/assets/image%20%2839%29.png)
+![](../../.gitbook/assets/image%20%2841%29.png)
 
 * The **Welcome to BigConnect** widget offers the basic information regarding all the actions that a user can trigger in the landing screen. 
 * The most important two are **Discover** and **Analyze** which can be found right at the top besides the **Dashboard** tab. ****The former handles creating, editing and saving searches and the later data visualization, enrichment, persistence etc.
 
-![](../../.gitbook/assets/image%20%2855%29.png)
+![](../../.gitbook/assets/image%20%2857%29.png)
 
 * Present on the navigation bar we can find the following:
 
@@ -50,25 +50,37 @@ Currently we have 3 widgets present on our dashboard : **Entity Counts** \( amou
 
 These initial widgets only show basic information. For real use cases one will use the more advanced widgets. Let us click once again the **Edit** button and then **Add** widget in order to have a look at what other widgets are available.
 
-**Behaviour** - ****enables a user to configure an existing behaviour and to display it on the **Dashboard**. 
-
-**Entity Counts** - displays the total counts of concepts or entities loaded in BigConnect. Please take into consideration that this is not limited to your user, but in fact to all existing users.
-
-**Notifications** - self explanatory displaying system and user notifications.
-
-**Relationship Counts** - displays the total number of relationships available between all existing entities.
-
-**Saved Search** - runs and displays an up to date saved search on the available data
-
-**Search Results** - displays tabular saved search results for performing additional aggregations
-
-**Welcome to BigConnect** - basic information about BigConnect functionalities
-
-\*\*\*\*
-
 ![](../../.gitbook/assets/image%20%2818%29.png)
 
 ![](../../.gitbook/assets/image%20%287%29.png)
 
+1. **Behaviour** - ****enables a user to configure an existing behaviour and to display it on the **Dashboard**. 
+2. **Entity Counts** - displays the total counts of concepts or entities loaded in BigConnect. It will be shown as a pie chart.
+3. **Notifications** - self explanatory displaying system and user notifications.
+4. **Relationship Counts** - displays the total number of relationships available between all existing entities. It will be shown as a bar chart.
+5. **Saved Search** - runs and displays an up to date saved search on the available data
+6. **Search Results** - displays tabular saved search results for performing additional aggregations
+7. **Welcome to BigConnect** - basic information about BigConnect functionalities
 
+**Attention!** Please take into consideration that this is not limited to your user, but in fact to all existing users. 
+
+### Example dashboard
+
+Until now we only configured the dashboard but no data was available. Please have a look below at a simple example and let's analyze one by one the widgets. In the coming sections we will understand more about how data is ingested and manipulated to provide the target insights.
+
+![](../../.gitbook/assets/image%20%2825%29.png)
+
+**Entity Counts** 
+
+There are 3 entities available: Person, Document and City. Each weight can be consulted by hovering on the pie chart slice corresponding to the target concept.
+
+**Relationship Counts**
+
+There is 1 type available: **Has Entity**. 
+
+In our example there is a central Document that links all our concepts so this is the reason we have **5 Has Entity** relationships**.** 
+
+**Saved Search**
+
+There is one saved search configured returning only the top 5 results for the available data. 
 

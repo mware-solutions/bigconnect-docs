@@ -8,7 +8,7 @@ description: Add toolbar items to the element inspector
 
 Allows additional toolbar items to be added to the Inspector.
 
-![](../../../../.gitbook/assets/image%20%2836%29.png)
+![](../../../../.gitbook/assets/image%20%2838%29.png)
 
 ## Web Plugin
 

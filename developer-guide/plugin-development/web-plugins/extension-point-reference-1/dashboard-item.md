@@ -8,7 +8,7 @@ description: Create new dashboard widgets
 
 Dashboard items are user-selectable content placed on the dashboard. These could be charts using the `report` configuration or custom components in React or FlightJS.
 
-![](../../../../.gitbook/assets/image%20%2827%29.png)
+![](../../../../.gitbook/assets/image%20%2829%29.png)
 
 In this tutorial we will create two new dashboard items:
 
