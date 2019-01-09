@@ -6,7 +6,7 @@ In this section we will see how the programmatic approach that filters out the t
 
 Let us click on the **Analyze** tab.
 
-![](../../.gitbook/assets/image%20%2843%29.png)
+![](../../.gitbook/assets/image%20%2844%29.png)
 
 Data can be visualized by using a BigConnect tool. Currently there are 2 tools available :
 
@@ -25,7 +25,7 @@ So in order to add our initial data to BigConnect let us first select a tool. On
 
 Let us select the Graph tool first. This will open the following:
 
-![](../../.gitbook/assets/image%20%2861%29.png)
+![](../../.gitbook/assets/image%20%2863%29.png)
 
 There are 3 self explanatory options available in order to populate our graph with some data:
 
@@ -35,17 +35,17 @@ There are 3 self explanatory options available in order to populate our graph wi
 
 For now let us upload some files and try to visualize the data. Clicking on **Upload** will display the following popup:
 
-![](../../.gitbook/assets/image%20%2860%29.png)
+![](../../.gitbook/assets/image%20%2862%29.png)
 
 We will click Attach Files and select the relevant files.
 
-![](../../.gitbook/assets/image%20%2855%29.png)
+![](../../.gitbook/assets/image%20%2856%29.png)
 
 We have chosen 1 file and can now click on **Import**. ****
 
 Please pay attention that if we were to upload an excel file BigConnect recognizes that it is a semi**-**structured data and will allow us to setup some smart mappings prior to data ingestion. For the moment though we will be using a simple text file.
 
-![](../../.gitbook/assets/image%20%2832%29.png)
+![](../../.gitbook/assets/image%20%2833%29.png)
 
 To the right we can now find a new **Graph** tool named **Untitled**. We would need a better name so in order to change it we simply hover it and click on **Edit**. There is one more action available and that is **Delete**.
 
@@ -53,7 +53,7 @@ Currently our graph contains only a document. The contents are related to everyd
 
 If our ontology were to contain the **Person** and **City** concepts then BigConnect could easily infer these in our document and present them on the graph as below:
 
-![](../../.gitbook/assets/image%20%2868%29.png)
+![](../../.gitbook/assets/image%20%2871%29.png)
 
 \*\*\*\*
 
@@ -63,7 +63,7 @@ If our ontology were to contain the **Person** and **City** concepts then BigCon
 
     2. When changes are operated on the graph they are by default applied only to the current space and if we want to make them global then we need to publish them. In order to see if there are any pending changes we can look at the left bottom of the screen and check the number next to the **Workspace changes**. If changes exist then something similar to the snippet below will be presented when clicking on the indicated number:
 
-![](../../.gitbook/assets/image%20%2825%29.png)
+![](../../.gitbook/assets/image%20%2826%29.png)
 
 **Explanation**: An entity's title was deleted but the change was not yet published.
 
@@ -75,7 +75,7 @@ There are a lot of functionalities that will be covered in an in depth video tut
 
 This tool is extremely useful for data that has a geolocation property. BigConnect knows to infer this information if asked to when ingesting the data or when reprocessing it. Also we can manually add a new property GeoLocation to an entity.
 
-![](../../.gitbook/assets/image%20%2830%29.png)
+![](../../.gitbook/assets/image%20%2831%29.png)
 
 In the example above we can see Washington was recognized on the map and if we click on the pin then we are shown the details pane as in the graph tool.
 

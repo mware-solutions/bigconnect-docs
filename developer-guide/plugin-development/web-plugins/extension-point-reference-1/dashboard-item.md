@@ -8,7 +8,7 @@ description: Create new dashboard widgets
 
 Dashboard items are user-selectable content placed on the dashboard. These could be charts using the `report` configuration or custom components in React or FlightJS.
 
-![](../../../../.gitbook/assets/image%20%2835%29.png)
+![](../../../../.gitbook/assets/image%20%2836%29.png)
 
 In this tutorial we will create two new dashboard items:
 
@@ -157,7 +157,7 @@ componentWillUnmount() {
 
 
 
-![](../../../../.gitbook/assets/image%20%2829%29.png)
+![](../../../../.gitbook/assets/image%20%2830%29.png)
 
 Provide a `configurationPath` to the extension to add an additional user interface component in the configure popover. The figure describes how the configuration interface is generated for the saved search dashboard item.
 
