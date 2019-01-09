@@ -13,6 +13,7 @@
 * [Using BigConnect](user-guide/dashboard/README.md)
   * [Getting started](user-guide/dashboard/getting-started-1.md)
   * [Discovering your data](user-guide/dashboard/discovering-your-data.md)
+  * [Finding relations](user-guide/dashboard/finding-relations.md)
 * [Configuration](user-guide/configuration.md)
 
 ## Developer Guide

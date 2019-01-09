@@ -2,7 +2,7 @@
 
 The first thing you will see is the login screen.
 
-![Login](../../.gitbook/assets/image%20%2842%29.png)
+![Login](../../.gitbook/assets/image%20%2850%29.png)
 
 If you are using the default installation guide you can introduce any username and click the "Log In" button.
 
@@ -17,16 +17,16 @@ Important things to notice
 
 **Attention**! By default the dashboard is private and can be seen only by the current user.
 
-![](../../.gitbook/assets/image%20%2835%29.png)
+![](../../.gitbook/assets/image%20%2839%29.png)
 
 * The **Welcome to BigConnect** widget offers the basic information regarding all the actions that a user can trigger in the landing screen. 
 * The most important two are **Discover** and **Analyze** which can be found right at the top besides the **Dashboard** tab. ****The former handles creating, editing and saving searches and the later data visualization, enrichment, persistence etc.
 
-![](../../.gitbook/assets/image%20%2847%29.png)
+![](../../.gitbook/assets/image%20%2855%29.png)
 
 * Present on the navigation bar we can find the following:
 
-![](../../.gitbook/assets/image%20%2818%29.png)
+![](../../.gitbook/assets/image%20%2819%29.png)
 
 The first icon is the **Activity**. As we learned earlier BigConnect supports long running processes. In order to track their progress after being started one can find them depicted in this view. Please pay attention that regular/system notifications are not to be shown here.
 
@@ -66,7 +66,7 @@ These initial widgets only show basic information. For real use cases one will u
 
 \*\*\*\*
 
-![](../../.gitbook/assets/image%20%2817%29.png)
+![](../../.gitbook/assets/image%20%2818%29.png)
 
 ![](../../.gitbook/assets/image%20%287%29.png)
 
