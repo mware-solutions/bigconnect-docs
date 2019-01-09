@@ -2,7 +2,7 @@
 
 The first thing you will see is the login screen.
 
-![Login](../../.gitbook/assets/image%20%2860%29.png)
+![Login](../../.gitbook/assets/image%20%2862%29.png)
 
 If you are using the default installation guide you can introduce any username and click the "Log In" button.
 
@@ -17,12 +17,12 @@ Important things to notice
 
 **Attention**! By default the dashboard is private and can be seen only by the current user.
 
-![](../../.gitbook/assets/image%20%2847%29.png)
+![](../../.gitbook/assets/image%20%2849%29.png)
 
 * The **Welcome to BigConnect** widget offers the basic information regarding all the actions that a user can trigger in the landing screen. 
 * The most important two are **Discover** and **Analyze** which can be found right at the top besides the **Dashboard** tab. ****The former handles creating, editing and saving searches and the later data visualization, enrichment, persistence etc.
 
-![](../../.gitbook/assets/image%20%2865%29.png)
+![](../../.gitbook/assets/image%20%2867%29.png)
 
 * Present on the navigation bar we can find the following:
 
@@ -68,7 +68,7 @@ These initial widgets only show basic information. For real use cases one will u
 
 Until now we only configured the dashboard but no data was available. Please have a look below at a simple example and let's analyze one by one the widgets. In the coming sections we will understand more about how data is ingested and manipulated to provide the target insights.
 
-![](../../.gitbook/assets/image%20%2830%29.png)
+![](../../.gitbook/assets/image%20%2831%29.png)
 
 **Entity Counts** 
 
