@@ -55,14 +55,14 @@ These initial widgets only show basic information. For real use cases one will u
 ![](../../.gitbook/assets/image%20%288%29.png)
 
 1. **Behaviour** - ****enables a user to configure an existing behaviour and to display it on the **Dashboard**. 
-2. **Entity Counts** - displays the total counts of concepts or entities loaded in BigConnect. It will be shown as a pie chart.
+2. **Entity Counts** - displays the total counts of concepts or entities loaded in BigConnect. It will be shown as a pie chart by default.
 3. **Notifications** - self explanatory displaying system and user notifications.
-4. **Relationship Counts** - displays the total number of relationships available between all existing entities. It will be shown as a bar chart.
+4. **Relationship Counts** - displays the total number of relationships available between all existing entities. It will be shown as a bar chart by default.
 5. **Saved Search** - runs and displays an up to date saved search on the available data
 6. **Search Results** - displays tabular saved search results for performing additional aggregations
 7. **Welcome to BigConnect** - basic information about BigConnect functionalities
 
-**Attention!** Please take into consideration that this is not limited to your user, but in fact to all existing users. 
+**Attention!** Please take into consideration that this is not limited to your user, but in fact to all existing users. Also, every widget has specific configuration that can be changed using the wheel icon.
 
 ### Example dashboard
 
