@@ -14,7 +14,7 @@ Please make sure Java 8 64bit is installed and the `java` command is included in
 
 BigConnect is provided for Linux and MacOS as a `.tar.gz` package. These packages are the easiest formats to use when trying out the platform and are free to use under the Apache 2.0 License. 
 
-The latest stable version of BigConnect can be found on the [Download BigConnect](https://www.bigconnect.io/download-free) page.
+The latest stable version of BigConnect can be found on the [Download BigConnect](https://www.bigconnect.io/choose-edition) page.
 
 ### Download and install the Linux package
 
