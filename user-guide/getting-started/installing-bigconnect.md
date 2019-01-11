@@ -16,7 +16,7 @@ BigConnect is provided for Linux and MacOS as a `.tar.gz` package. These package
 
 The latest stable version of BigConnect can be found on the [Download BigConnect](https://www.bigconnect.io/choose-edition) page.
 
-### Download and install the Linux package
+### Download and install the Linux Lite package
 
 The `.tar.gz` archive for the latest BigConnect Linux SQL release can be downloaded and installed as follows:
 
@@ -29,9 +29,9 @@ cd bc-A.B.C-sql-linux-x86_64/
 
 A.B.C is the latest BigConnect release version found on the [Download](https://www.bigconnect.io/download-free) page.
 
-Compare the SHA produced by or `shasum` with the [published SHA](http://bits.bigconnect.io/downloads/bc/bc-3.5.0-x86_64.tar.gz.sha512) value.
-
 The folder `bc-A.B.C-linux-x86_64/` will be referenced further as `$BIGCONNECT_DIR`
+
+Compare the SHA produced by or `shasum` with the [published SHA](http://bits.bigconnect.io/downloads/bc/bc-3.5.0-x86_64.tar.gz.sha512) value.
 
 ### Directory layout of Linux `.tar.gz` packages
 
