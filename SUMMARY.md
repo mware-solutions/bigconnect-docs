@@ -17,6 +17,10 @@
   * [Administration panel](user-guide/dashboard/data-ingestion.md)
 * [Configuration](user-guide/configuration.md)
 
+## User Guide
+
+* [Getting Started](user-guide-1/getting-started.md)
+
 ## Developer Guide
 
 * [Architecture and Concepts](developer-guide/things-you-should-know.md)

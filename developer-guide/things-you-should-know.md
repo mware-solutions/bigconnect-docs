@@ -6,12 +6,13 @@ Before starting to browse the source code, customize the platform or develop plu
 
 A high level overview of a production architecture is presented below. This is an ideal deployment scenario, with dedicated machines for each Web Console, Data Workers, Job Workers, Queues and Data Ingestion.
 
-![](../.gitbook/assets/architecture.png)
+![](../.gitbook/assets/architecture%20%281%29.png)
 
-There are three types of BigConnect nodes that can be run:
+There are four types of BigConnect nodes that can be run:
 
 * **Data Worker** nodes usually handle data enrichment. 
 * **Process Worker** nodes usually handle long running processes \(such as running Machine Learning models or Graph algorithms\) or scheduled tasks.
+* **External Worker** nodes that handle data ingestion or processing from potentially rate-limited external sources
 * **Web Console** nodes serve the Web Console application
 
 Each BigConnect running node can be a combination of one or more types. This means that in a very simple deployment, one running node can be used to serve the Web Console, to run data worker plugins and job worker plugins, whereas in a typical production deployment you will have nodes that handle specific tasks and are also distributed across many machines.
