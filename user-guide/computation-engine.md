@@ -69,7 +69,7 @@ NOTE: If you want to feed in a text file config and POST using curl, you want th
 curl --data-binary @my-job-config.json "localhost:8090/jobs?appNam=..."
 ```
 
-Please pay attention to the fact that in the latest version you might stumble upon the following issue: for Java jobs you first have to create a context and only then you can submit a job. Otherwise you will get an error.
+Please pay attention to the fact that in the latest version you might stumble upon the following issue with Adhoc contexts: for Java jobs you first have to create a context and only then you can submit a job. Otherwise you will get an error. \( you can track the progress [here](https://github.com/spark-jobserver/spark-jobserver/pull/1124) \)
 
 For creating a context use the following command:
 
