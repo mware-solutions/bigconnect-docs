@@ -16,6 +16,7 @@
   * [Data advanced visualization](user-guide/dashboard/finding-relations.md)
   * [Administration panel](user-guide/dashboard/data-ingestion.md)
 * [Configuration](user-guide/configuration.md)
+* [Computation engine](user-guide/computation-engine.md)
 
 ## User Guide
 
