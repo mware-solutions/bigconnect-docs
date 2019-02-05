@@ -69,7 +69,13 @@ NOTE: If you want to feed in a text file config and POST using curl, you want th
 curl --data-binary @my-job-config.json "localhost:8090/jobs?appNam=..."
 ```
 
+Please pay attention to the fact that in the latest version you might stumble upon the following issue: for Java jobs you first have to create a context and only then you can submit a job. Otherwise you will get an error.
 
+For creating a context use the following command:
+
+```text
+curl -d "" 'localhost:8090/contexts/jcontext?context-factory=spark.jobserver.context.JavaSparkContextFactory'
+```
 
 
 
