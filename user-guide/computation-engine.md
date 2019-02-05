@@ -6,7 +6,7 @@ For solving this issue it has been decided to add  [Apache Spark](http://spark-p
 
 In order to orchestrate the different Spark jobs that are spawned through BigConnect's rich interface it has been aligned to make use of the [Spark Jobserver](https://github.com/spark-jobserver/spark-jobserver). It provides a RESTful interface for submitting and managing [Apache Spark](http://spark-project.org/) jobs, jars, and job contexts and it is widely used by a lot of companies \( e.g. Netflix \). An important configuration setting is that one can choose to have a shared Spark Context or a new one per submitted job. Of course for improving response times one will opt for sharing the Spark Context if possible.
 
-For our demo showcase a small cluster comprised of 1 master and 2 worker nodes is used and in front a single [Spark Jobserver ](https://github.com/spark-jobserver/spark-jobserver)instance located on the same machine as the master node.
+For our demo showcase a small cluster comprised of 1 master and 2 worker nodes is used and in front a single [Spark Jobserver ](https://github.com/spark-jobserver/spark-jobserver)instance. \( We currently use only 3 machines bc-node-1, bc-node2 and bc-node 3 \). bc-node-2 and bc-node-3 are worker nodes and bc-node-1 holds both the Spark master and the Spark Jobserver.
 
 In a few words in order to have a working [Spark Jobserver](https://github.com/spark-jobserver/spark-jobserver) one can opt for the development mode or for the production one.
 
