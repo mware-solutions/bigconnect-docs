@@ -89,7 +89,7 @@ Concepts also have meta-properties that describe how the concept should be treat
     </tr>
     <tr>
       <td style="text-align:left">updateable</td>
-      <td style="text-align:left">If the concept's properties can be updated</td>
+      <td style="text-align:left">If the concept&apos;s properties can be updated</td>
     </tr>
     <tr>
       <td style="text-align:left">intents</td>
