@@ -69,7 +69,7 @@ If our ontology were to contain the **Person** and **City** concepts then BigCon
 
 We can now choose to **Undo** it \( revert the change \) or **Publish** it \( propagate it globally \).
 
-There are a lot of functionalities that will be covered in an in depth video tutorial.
+Please check out our youtube channel for more in depth tutorials.
 
 #### Map
 
@@ -81,5 +81,5 @@ In the example above we can see Washington was recognized on the map and if we c
 
 There are some additional features available in the map as opposed to the graph like drawing a heatmap, grouping the entities together in a cluster etc. 
 
-These will be all covered in a video tutorial.
+Please check out our youtube channel for more in depth tutorials.
 

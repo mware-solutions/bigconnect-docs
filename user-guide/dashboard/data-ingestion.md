@@ -71,7 +71,7 @@ Click on the **+** sign.
 
 ![](../../.gitbook/assets/image%20%2875%29.png)
 
-As we can see above there are multiple steps to be configured and they will be explained in more depth in a video tutorial, but the basic idea is that we configure a database connection, then specify the target tables for our data, specify the relationships according to our internal ontology and then we can finally start an actual data import job.
+As we can see above there are multiple steps to be configured and if you want more details please check out our youtube channel. The the basic idea is that we configure a database connection, then specify the target tables for our data, specify the relationships according to our internal ontology and then we can finally start an actual data import job.
 
 ### Ontology
 
