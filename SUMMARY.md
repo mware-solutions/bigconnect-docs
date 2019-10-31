@@ -18,7 +18,7 @@
 * [Configuration](user-guide/configuration.md)
 * [Computation engine](user-guide/computation-engine.md)
 
-## User Guide
+## User Guide <a id="user-guide-1"></a>
 
 * [Getting Started](user-guide-1/getting-started.md)
 
